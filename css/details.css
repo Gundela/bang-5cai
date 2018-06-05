@@ -1,0 +1,171 @@
+.menu-title{
+	margin-left: 55px;
+	padding: 5px 0;
+}
+.menu-title span{
+	/*margin-left: 20px;*/
+}
+.menu-title span a{
+	font-size: 14px;
+	color:#333333;
+}
+.menu-title span .last{
+	color:red;
+}
+.middle{
+	width: 1158px;
+	height: 610px;
+    background-color: #fff;
+    border: 1px solid #dcdcdc;
+	margin: 0 auto;
+ 	font-size: 14px;
+}
+.middle .middle-left{
+	float: left;
+    width: 440px;
+    height: auto;
+    margin-top: 20px;
+	border: 1px solid #dcdcdc;
+	margin-left: 20px;
+}
+.middle .middle-left img{
+	    display: inline-block;
+    vertical-align: middle;
+    font-size: 12px;
+    font-size: 1rem;
+    line-height: normal;
+}
+.middle .middle-right{
+	width: 640px;
+	height: 551px;
+	border: 1px solid #dcdcdc;
+	margin-left:40px;
+	float: left;
+}
+.middle .middle-right-head span img{
+	margin-top: 17px;
+	    float: left;
+    /*width: 35px;
+    height: 35px;*/
+    font-size: 22px;
+}
+.middle .middle-right-head span a{
+	font-size: 14px;
+	line-height: 60px;
+	margin-left: 5px;
+}
+.middle .middle-right-head p{
+	float: right;
+	margin-top: 21px;
+    margin-right: 130px;
+}
+.middle .middle-right .zp{
+	    margin-right: 3px;
+    text-align: center;
+    color: #eb1151;
+    border: 1px solid #eb1151;
+    font-size: 12px;
+    font-family: "SimSun";
+    line-height: 22px;
+    height: 22px;
+    width: 40px;
+    float: left;
+    margin-top: 2px;
+}
+.middle .middle-right .sku-title-word2 h1{
+	color: #333;
+	font-size:18px;
+    font-weight: normal;
+}
+.middle .sku-pric{
+	background-color: #f6f6f6;
+}
+.sku-pric .sku-price-num-list{
+	width: 640px;
+    margin: 5px 0;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    color: #7f7f7f;
+    margin-left: 10px;
+    text-indent: 5px;
+}
+.sku-pric .sku-pric-num-line{
+	border-top: 1px #d8d8d8 dashed;
+    height: 36px;
+     color: #7f7f7f;
+     font-size: 14px;
+    line-height: 36px;
+    margin: 5px 10px;
+    border-bottom: 1px #d8d8d8 dashed;
+}
+.sku-pric .sku-price-num-list{
+	width: 640px;
+    margin: 5px 0;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    color: #7f7f7f;
+    margin-left: 10px;
+    text-indent: 5px;
+}
+.sku-property .sku-property-first p{
+	width: 530px;
+	height: 28px;
+	color: #7f7f7f;
+	font-size: 14px;
+	background: #f8e6de;
+	line-height: 28px;
+}
+.sku-property .sku-property-first span{
+	font-size:14px;
+	color: #7f7f7f;
+	display: block;
+	margin: 20px 0;
+}
+.sku-property .sku-property-second p{
+	color: #7f7f7f;
+	font-size: 14px;
+	margin-top: 15px;
+}
+.sku-property .sku-property-thrid{
+	overflow: hidden;
+}
+.sku-property .sku-property-thrid p{
+	color: #7f7f7f;
+	font-size: 14px;
+	float: left;
+	margin-top: 15px;
+}
+.sku-property .sku-property-thrid span{
+	display: block;
+	width: 58px;
+	height:30px;
+	border: 1px solid #eb1151;
+	background:url(../img/btn.jpg)102% 98% no-repeat;
+	text-align: center;
+	line-height: 30px;
+	color: #7f7f7f;
+	float: left;
+	margin-top: 10px;
+	margin-left: 30px;
+}
+.sku-property .sku-property-fourth p{
+	color: #7f7f7f;
+	font-size: 14px;
+	float: left;
+	margin-top: 15px;
+}
+.sku-property .sku-property-fourth span{
+	display: block;
+	width: 38px;
+	height:28px;
+	border: 1px solid #dcdcdc;
+	
+	text-align: center;
+	line-height: 30px;
+	color: #7f7f7f;
+	float: left;
+	margin-top: 10px;
+	margin-left: 30px;
+}
