@@ -23,17 +23,13 @@
 .middle .middle-left{
 	float: left;
     width: 440px;
-    height: auto;
+    height: 450px;
     margin-top: 20px;
 	border: 1px solid #dcdcdc;
 	margin-left: 20px;
 }
 .middle .middle-left img{
-	    display: inline-block;
-    vertical-align: middle;
-    font-size: 12px;
-    font-size: 1rem;
-    line-height: normal;
+	  margin: 50px;
 }
 .middle .middle-right{
 	width: 640px;
@@ -150,6 +146,9 @@
 	margin-top: 10px;
 	margin-left: 30px;
 }
+.sku-property .sku-property-fourth{
+	overflow: hidden;
+}
 .sku-property .sku-property-fourth p{
 	color: #7f7f7f;
 	font-size: 14px;
@@ -168,4 +167,30 @@
 	float: left;
 	margin-top: 10px;
 	margin-left: 30px;
+}
+.sku-property .sku-property-last{
+	width: 570px;
+	height: 30px;
+	border: 1px solid #7f7f7f;;
+}
+.sku-buy{
+	margin-left: 322px;
+    margin-top: 24px;
+}
+.sku-buy .buy-now{
+	width: 120px;
+	height: 38px;
+	color: #eb1151;
+    border: 1px solid #eb1151;
+    background-color: #fff;
+    font-size: 14px;
+}
+.sku-buy  .buy-cart{
+	width: 120px;
+	height:38px;
+	margin-left: 5px;
+    color: #fff;
+    border: 1px solid #eb1151;
+    background-color: #eb1151;
+    font-size: 14px;
 }
