@@ -4,6 +4,7 @@
 		<meta charset="UTF-8">
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="css/zhuche.css"/>
+		<script src="js/jquery-2.1.0.js"></script>
 	</head>
 	<body>
 		<div class="top">
@@ -50,19 +51,8 @@
 				<span>消息</span>
 			</div>
 			<p>手机号格式不能为空</p>
-			<a href="">确认</a>
+			<a href="javascript:;">确认</a>
 		</div>
-		<script type="text/javascript">
-			let oEject=document.getElementsByclassName("eject")[0];
-			let oBtn = document.getElementsByTagName("button");
-			let oA = document.getElementsByTagName("a");
-			oBtn.onclick=function(){
-				oEject.style.display="block";
-			}
-			oA.onclick=function(){
-				oEject.style.display="none";
-			}
-		</script>
 		<!--公有样式-->
 		<div class="base">
 				
@@ -131,7 +121,15 @@
 								<a href="">九块九包邮</a>
 				</p>
 			</footer>
-				
+		<script type="text/javascript">
+			$('button').click(function(){
+				$('.eject').css({display : 'block'});
+			});
+			$('.eject').find('a').click(function(){
+//				$('.eject').css({display:'none'});
+				$(this).parent('.eject').css({display : 'none'});
+			});
+		</script>
 		
 	</body>
 </html>

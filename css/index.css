@@ -112,22 +112,6 @@ body{
 .logo-right span{
 	margin-right:20px;
 }
-/*.son-nav{
-	height:75px;
-	background: deepskyblue;
-}
-.son-nav ul{
-	margin-left: 75px;
-}
-.son-nav li{
-	float: left;
-}
-.son-nav  a{
-	font-size: 16px;
-	color: #000000;
-	line-height: 75px;
-	margin-right:41px;
-}*/
 
 
 /*导航的样式*/
@@ -151,6 +135,9 @@ body{
 .son-nav ul li {
   float: left;
 }
+.son-nav ul li:hover a{
+	color: red;
+}
 .son-nav ul li a {
   display: block;
   padding: 0 10px;
@@ -169,14 +156,118 @@ body{
   left: 0;
   z-index: 99;
 }
+.hx{
+	border: 2px solid black;
+	width: 100%;
+}
+/*鼠标经过下拉导航
+*/
+
+.pull-down{
+	width:1180px;
+	height:403px;
+	background-color: #fff;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+    margin: 0 auto;
+    position: absolute;
+    left: 59px;
+    z-index: 1500;
+    display: none;
+}
+.pull-down .center{
+	padding: 10px 40px;
+    overflow: hidden;
+    z-index: 100;
+/*    background: salmon;*/
+}
+
+.pull-down .center h3{
+	display: block;
+    border-bottom: 1px solid #c3c3c3;
+    width: 500px;
+    height: 35px;
+}
+.pull-down .center .center-left{
+	width: 500px;
+    margin-right: 40px;
+    padding: 0;
+    overflow:hidden;
+    float: left;
+}
+.pull-down .center .center-left a{
+	    color: #333;
+    font-size: 14px
+}
+.pull-down .center .center-left a:hover{
+	color: red;
+}
+.pull-down .center .center-left ul li{
+	    float: left;
+    width: 118px;
+    margin-right: 5px;
+    cursor: pointer;
+ /*   position: relative;*/
+    line-height: 30px;
+}
+.pull-down .center .h3-two{
+	display: block;
+    border-bottom: 1px solid #c3c3c3;
+    width: 500px;
+    height: 35px;
+    float: left;
+}
+.pull-down .center .center-right{
+	float: right;
+	padding: 0;
+    margin-right: 0px;
+    width: 560px;
+}
+.pull-down .center .center-right h3{
+	border: none;
+}
+.pull-down .center .center-right ul li {
+	width: 112px;
+    height: 112px;
+    box-sizing: border-box;
+    margin: 0px;
+    border: 1px solid #d5d5d5;
+    padding: 0px;
+    text-align: center;
+    font-size: 12px;
+    margin-top: -1px;
+    margin-right: -1px;
+    float: left;
+    width: 118px;
+    cursor: pointer;
+    position: relative;
+    line-height: 30px;
+}
+.pull-down .center .center-right ul li img{
+	width: 110px;
+    height: 50px;
+    margin-top: 30px;
+}
+.pull-down .center .center-right ul li span{
+	position: absolute;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0,0,0,0.6);
+    top: 50%;
+    margin-top: -25px;
+    left: 0;
+    font: bold 16px/50px "Microsoft YaHei";
+    color: #fff;
+    display: none;
+}
+.pull-down .center .center-right ul li:hover span{
+	display: block;
+}
+
 
 
 
 
 /*轮播图*/
-/*.bann img{
-	width:100%;
-}*/
 
 .new-brand{
 	
@@ -245,21 +336,40 @@ body{
 	margin-top: 15px;
 	width: 1184px;
     height: 200px;
-    /*border-left:1px solid #999999;*/
+    
 }
 .hot-brand ul{
-	
+
 }
 .hot-brand ul li{
 	float: left;
 	width: 294px;
-	border-right: 1px solid #999999;
-	border-top: 1px solid #999999;
+	
+	border: 1px solid #999999;
+	margin-top: -1px;
+    margin-right: -1px;
 	background:white;
-}
-/*.hot-brand ul li:hover{
-	border: 1px solid red;
+	position: relative;
+	}
+	
+	/*float: left;
+    width: 294px;
+    margin: 0;
+    padding-bottom: 10px;
+    background-color: #fefefe;
+    border: 1px solid #ccc;
+    transition: all .2s;
+    
 }*/
+/*.hot-brand ul li:hover{
+	position: absolute;
+	border: 1px solid #ea094b;
+    box-shadow: 0px 4px 20px rgba(0,0,0,0.3);
+    z-index: 99;
+    transform: scale(1.05);
+    height: 390px;
+}*/
+
 .hot-brand ul li img{
 	width: 274px;
 	height: 274px;
@@ -269,6 +379,7 @@ body{
 	height: 24px;
 	float: left;
 }
+
 .hot-brand ul li b{
 	font-size: 14px;
 	display: block;
@@ -302,6 +413,7 @@ body{
     color: #ea094b;
     text-align: center;
     margin-right: 10px;
+        margin-bottom: 8px;
 }
 .bann-bot img{
 	margin-left: 40px;

@@ -1,6 +1,8 @@
 //导航划过效果
 $(function() {
 	var $t, leftX, newWidth;
+	let $div=$(".pull-down ");
+	let $hg=$(".center");
 
 	$('.son-nav ul').append('<div class="block"></div>');
 	var $block = $('.block');
@@ -16,16 +18,24 @@ $(function() {
 			left: leftX,
 			width: newWidth
 		},300);
+		$div.css("display","block");
 	}, function() {
 		$block.stop().animate({
 			left: $block.data('rightLeft'),
 			width: $block.data('rightWidth')
 		},300)
+		$div.css("display","none");
 	})
-	// $($('.menu ul li.current'))[0].setAttribute('id','firstLi');
-	// var getClass = $($('.menu ul li.current'))[0].getAttribute('class','current');
-	// console.log(getClass)
-})
+	$div.hover(function(){
+	$div.css({display:'block'});
+},
+function(){
+	$div.css({display:'none'});
+}
+);
+	
+});
+
 
 
 
