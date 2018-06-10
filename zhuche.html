@@ -26,8 +26,15 @@
 			<div class="center-form">
 				<p>手机号：<input type="text" name="" class="tex" placeholder="请输入手机号" /></p>
 				<div class="yanzheng">
-				<p>图形验证码：<input type="text" placeholder="图形验证码"/></p>
-				<!--<span><i></i><a href="">换一张</a></span>-->
+				<p>图形验证码：<input type="text"  id="code_input" placeholder="图形验证码"/></p>
+		
+			<div class="yanzheng-rig">
+					<div id="v_container"></div>
+				</div>
+				<script src="js/gVerify.js" type="text/javascript" charset="utf-8"></script>
+				
+				
+		
 				</div>
 			<div class="duanxin">
 				<p>短信验证码:<input type="text" placeholder="短信验证码"/><button>获取手机验证码</button></p>
@@ -35,6 +42,17 @@
 			<div class="next">
 				<a href="" id="next-son">下一步</a>
 			</div>		
+				<script type="text/javascript">
+					var verifyCode = new GVerify("v_container");
+					document.getElementById("next-son").onclick = function(){
+					var res = verifyCode.validate(document.getElementById("code_input").value);
+					if(res){
+						alert("验证正确");
+					}else{
+						alert("验证码错误");
+					}
+				}
+				</script>
 					
 					
 				
@@ -121,6 +139,7 @@
 								<a href="">九块九包邮</a>
 				</p>
 			</footer>
+		
 		<script type="text/javascript">
 			$('button').click(function(){
 				$('.eject').css({display : 'block'});
